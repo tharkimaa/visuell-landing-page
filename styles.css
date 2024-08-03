@@ -10,77 +10,137 @@ body {
     color: #000;
 }
 
-.logo {
-    width: 300px; /* Adjust this value as needed */
-    height: auto; /* Maintain aspect ratio */
-}
-.sequencer {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-}
-
-.block {
-    width: 100px;
-    height: 100px;
-    margin: 5px;
-    background-color: #ccc;
-    border-radius: 5px;
-    opacity: 0.5;
-}
-
-.active {
-    background-color: #afff1bb3;
-    opacity: 1;
-}
-
 .container {
     text-align: center;
     padding: 20px;
 }
+
 .header {
     font-size: 4em;
     margin: 20px 0;
 }
+
+.logo {
+    width: 250px; /* Adjust this value as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
 .subheader {
-    font-size: 4em;
+    font-size: 2em;
     margin: 20px 0;
 }
-.features {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+
+.body-text {
     margin: 20px 0;
+}
+
+.swiper-container {
     width: 100%;
+    max-width: 100%;
+    padding: 40px 0;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.swiper-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Remove default Swiper button styling */
+.swiper-button-next,
+.swiper-button-prev {
+    background: none;
+    width: 44px;
+    height: 44px;
+    margin-top: 0;  /* Reset the default margin */
+    transform: translateY(-50%);  /* Center vertically */
+}
+
+/* Remove default arrows */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    display: none;
+}
+
+/* Style our custom buttons */
+.custom-swiper-button {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-swiper-button img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Position the buttons */
+.swiper-button-next {
+    right: 10px;
+}
+
+.swiper-button-prev {
+    left: 10px;
+}
+
+/* Optional: Add hover effect */
+.custom-swiper-button:hover img {
+    opacity: 0.7;
 }
 .feature {
-    width: 150px;
-    margin: 10px;
-    padding: 10px;
-    border: 5px solid #000;
-    border-radius: 8px;
+    text-align: center;
 }
-.feature img {
+
+
+.feature-image {
     width: 100%;
+    padding-top: 100%; /* 1:1 Aspect Ratio */
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    margin-bottom: 10px;
 }
+
 .demo {
     margin: 20px 0;
 }
-.demo img {
-    width: 100%;
-    max-width: 600px;
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
 }
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .signup {
     background-color: #000;
     color: #fff;
     padding: 20px;
 }
+
 .signup input[type="email"] {
     padding: 10px;
     margin: 10px 0;
     width: 80%;
     max-width: 300px;
 }
+
 .signup button {
     padding: 10px 20px;
     background-color: #555;
@@ -88,14 +148,17 @@ body {
     color: #fff;
     cursor: pointer;
 }
+
 .signup button:hover {
     background-color: #333;
 }
+
 .footer {
     display: flex;
     justify-content: space-around;
     margin: 20px 0;
 }
+
 .footer a {
     color: #000;
     text-decoration: none;
