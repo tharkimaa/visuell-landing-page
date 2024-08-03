@@ -7,6 +7,7 @@
         <!-- Google Fonts link for Montserrat -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     </head>
 <body>
     <div class="container">
@@ -34,7 +35,9 @@
             <div class="block"></div>
             <div class="block"></div>
         </div>
-        <div class="features">
+
+        <div class="features" data-aos="fade-up">
+
             <div class="feature">
                 <img src="Runs Anywhere Icon@1x.tiff" alt="Feature 1">
                 <p>Runs anywhere on a web browser</p>
@@ -47,6 +50,9 @@
                 <img src="Tempo@1x.tiff" alt="Feature 3">
                 <p>Tempo Synced</p>
             </div>
+        </div>
+
+        <div class="features" data-aos="fade-up">
             <div class="feature">
                 <img src="Expressive Intuitive controls@1x.tiff" alt="Feature 4">
                 <p>Expressive and Intuitive Controls</p>
@@ -59,6 +65,9 @@
                 <img src="video Samples@1x.tiff" alt="Feature 6">
                 <p>Import your videos and use them as samples</p>
             </div>
+        </div>
+        
+        <div class="features" data-aos="fade-up">
             <div class="feature">
                 <img src="Collaborate@1x.tiff" alt="Feature 7">
                 <p>Export, share and collaborate online</p>
@@ -68,6 +77,7 @@
                 <p>Load custom graphics shaders</p>
             </div>
         </div>
+
         <div class="demo">
             <h2>watch our demo</h2>
             <div class="video-container">
@@ -87,5 +97,9 @@
         </div>
     </div>
     <script src="sequencerscript.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
