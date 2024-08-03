@@ -1,3 +1,7 @@
+.logo {
+    width: 200px; /* Adjust this value as needed */
+    height: auto; /* Maintain aspect ratio */
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
