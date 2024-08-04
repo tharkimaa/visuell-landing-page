@@ -48,6 +48,7 @@ body {
     align-items: center;
 }
 
+
 /* Remove default Swiper button styling */
 .swiper-button-next,
 .swiper-button-prev {
@@ -73,11 +74,6 @@ body {
     align-items: center;
 }
 
-/* Optional: Add hover effect */
-.custom-swiper-button:hover img {
-    opacity: 0.7;
-}
-
 .custom-swiper-button img {
     width: 100%;
     height: 100%;
@@ -93,41 +89,22 @@ body {
     left: 10px;
 }
 
+/* Optional: Add hover effect */
+.custom-swiper-button:hover img {
+    opacity: 0.7;
+}
 .feature {
     text-align: center;
 }
 
-.atropos {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    border-radius: 15px;
-    overflow: visible; /* Ensure the effect is not cut off */
-    margin-bottom: 10px;
-}
 
 .feature-image {
     width: 100%;
-    height: 100%;
+    padding-top: 100%; /* 1:1 Aspect Ratio */
     background-size: cover;
     background-position: center;
-    position: relative;
-}
-
-.feature-foreground {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.feature-foreground img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
+    border-radius: 15px;
+    margin-bottom: 10px;
 }
 
 .demo {
